@@ -1,0 +1,11 @@
+<form method="POST" action="/twitterSearch">
+    Search Twitter: <input type="text" name="twitterterm"><br>
+    <input type="submit">
+</form>
+<li>
+    {{#each person}}
+        <li>
+            {{ text }}
+        </li>
+    {{/each}}
+</li>
