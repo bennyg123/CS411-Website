@@ -1,0 +1,19 @@
+var userSchema = new Schema({
+	username: String,
+	password: String,
+	email: String
+});
+
+our schema is described as shown above.
+The schema is composed of three parts for now, with a username, password and a email,
+all of which takes in a string value.
+
+For the pipeline of the API call:
+
+1.) User enters credentials in a loginbox -> 
+2.) makes a POST request to our server at "/loginUser" ->
+3.) The server checks the mongo database to see if the username and password specified exists -> 
+4.) If so then it returns a json with the following schema {value: Boolean, username : String}.
+The value is if the username/password combo was found, it will be true. The username is the username stored in the database.->
+4b.) If it is not found the following will be returned {value: false, username: ""} ->
+5.) The application checks whether the return json has a value of true or false, if true it takes the user to a login page. if false it goes back to the home page.
