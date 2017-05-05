@@ -3,8 +3,11 @@
 Please run a servfice of mongo before starting the app
 
 Mernstack 411 Node is used for our database testing. We created a user login system.
+
 Twitter API test was the first API test deliverable.
+
 411Assigment3.pdf showed the user expereince flow diagrams
+
 411FinalProject is the final submission
 
 ---------------------------------------------
