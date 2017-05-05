@@ -236,7 +236,7 @@ class Mappage extends Component {
                         <Col xs={8}>
                             <Map center={this.state.initialpos} zoom={13} style={{height: "500px", width:"100%"}}>
                                 <TileLayer
-                                url={'https://api.mapbox.com/styles/v1/mapbox/dark-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYmVubnlnMTIzIiwiYSI6ImNqMDJ0Z2gyYTA0a2wyd29sNGp4bGh6aXEifQ.imvmUgHdkVRCFagOrt8Fgw'}
+                                url={'https://api.mapbox.com/styles/v1/mapbox/dark-v9/tiles/256/{z}/{x}/{y}?'}
                                 maxZoom={15}
                                 />
                                 {this.state.markerlist}
