@@ -28,14 +28,8 @@ connection.on("open", function(){
 //FORMAT
 
 
-var client = new Twitter({
-  consumer_key: 'peQHdiVK6hs9Zvv8W802aqCpe',
-  consumer_secret: 'P86Ft0a70WBrP486Fns2LgvFBXNI3vNUbT0Rd0dt14x1xtCpeL',
-  access_token_key: '2324372889-FfQT1K5FIXECWbbAQmRppG0nAcAEHZaWzWgA2rD',
-  access_token_secret: 'xEY20cRk7MKKVAZSUAQ0AKxpnUf2fnBHQoRuoxweDPtnL'
-});
+//Twitter and yelp keys here
 
-var yelp_api_key = "HVB__PRkRm-c0-jHS9l9-FTwfk9076RFXvzh7NQfN9WhTcGmU8hrLkHhGBsA21ti0ZsQvBaY_c3RMj4dGMre93IyEi7FwFGN2vZxkVgYO0WK_3KnkMngAmBuaYD_WHYx";
 // static resources
 
 app.use(bodyParser.json());
@@ -85,7 +79,7 @@ app.post("/yelpSearch",(req, res) => {
         limit:35,
     },
     headers: 
-    {authorization: 'Bearer HVB__PRkRm-c0-jHS9l9-FTwfk9076RFXvzh7NQfN9WhTcGmU8hrLkHhGBsA21ti0ZsQvBaY_c3RMj4dGMre93IyEi7FwFGN2vZxkVgYO0WK_3KnkMngAmBuaYD_WHYx' } };
+    {authorization: 'Bearer /*Yelp secret key*/' } };
     //console.log(options);
 
     Location.find({username: cities[req.body.capital].latitude+""+cities[req.body.capital].longitude}, (err, results) =>{
