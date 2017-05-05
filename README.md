@@ -1,6 +1,6 @@
 # CS411-Website
 ---------------------------------------------
-Please run a servfice of mongo before starting the app
+Please run a service of mongo before starting the app
 
 Mernstack 411 Node is used for our database testing. We created a user login system.
 
