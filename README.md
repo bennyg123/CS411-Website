@@ -36,5 +36,11 @@ Learning React, integrating with Redux and integrating everything with React-Rou
 Our intital design was to have a map that showed the sentitment analysis of all 50 states, and have the user click on each to check the tweets and score. However due to the limitation of the Twitter API we had to change the map clicking, to a drop down box for the city, state.
 
 # Timeline (listed by group meetings, we did not keep track of the dates)
-
-
+1. Discuss the website ideas
+2. Pick an idea
+3. Discuss and decide on the framework (MERN)
+4. Reasearch the 4square and twitter api and react
+5. Reaserch the map framework and setiment analysis libary
+6. Switched to the yelp api due to 4squares limitations
+7. Combine everthing and troubleshoot
+8. Added react-router for client side routing
